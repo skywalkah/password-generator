@@ -60,7 +60,6 @@ header h1 {
 
 .card-body {
   min-height: 100px;
-  margin: 20px 0;
 }
 
 #password {
@@ -74,7 +73,7 @@ header h1 {
   padding: 15px 15px 85px;
   font-size: 1.2rem;
   text-align: center;
-  margin: 10px 0;
+  margin: 20px 0;
   color: var(--white);
   border: 2px dashed var(--light-blue);
   border-radius: 6px;
