@@ -1,6 +1,6 @@
 # JavaScript: Password Generator
 ## Description
-Bootcamp week 3 Javascript challenge where we create a password generator. The user must choose a password length between 8 and 128 characters. The user can to include lowercase, uppercase, numeric, and/or special characters. At least one character type must be selected.
+Bootcamp week 3 Javascript challenge where we create a password generator. The user must choose a password length between 8 and 128 characters and include lowercase, uppercase, numeric, and/or special characters. At least one character type must be selected.
 ## Installation
 N/A
 ## Usage
