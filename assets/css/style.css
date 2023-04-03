@@ -1,3 +1,11 @@
+/* -- Global vars -- */
+:root {
+  --white: #fff;
+  --light-blue: #c0c7cf;
+  --dark-blue: #0d172a;
+}
+
+/* -- Global styles/reset -- */
 *,
 *::before,
 *::after {
@@ -5,136 +13,102 @@
 }
 
 html,
-body,
-.wrapper {
+body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: sans-serif;
-  background-color: #282c34;
+  font-family: 'Barlow', sans-serif;
+  background-color: var(--dark-blue);
+  font-size: 18px;
+  font-weight: 200;
+  padding: 30px 20px;
 }
 
-.wrapper {
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
+/* -- Header --*/
 header {
   text-align: center;
-  padding: 20px;
-  padding-top: 0px;
-  color: #d3dbee;
+  color: var(--light-blue);
 }
 
+header h1 {
+  font-family: 'Albert Sans', sans-serif;
+}
+
+/* -- Card--*/
 .card {
-  background-color: hsl(0, 0%, 100%);
-  border-radius: 5px;
-  border-width: 1px;
+  background: rgb(77,6,108);
+  background: linear-gradient(329deg, rgba(77,6,108,1) 0%, rgba(7,31,108,1) 23%, rgba(0,65,255,1) 100%);
+  border-radius: 10px;
+  border-width: 2px;
   box-shadow: 0 29px 52px rgba(0,0,0,0.40), 0 25px 16px rgba(0,0,0,0.20);
-  color: hsl(206, 17%, 28%);
+  color: var(--white);
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
-  padding: 30px 40px;
+  padding: 60px;
 }
 
-.card-header::after {
-  content: " ";
-  display: block;
-  width: 100%;
-  background: #e7e9eb;
-  height: 2px;
+.card h2 {
+  border-bottom: 2px solid rgba(7,31,108,.75);
+  margin: 0px;
+  padding-bottom: 5px;
+  font-weight: 200;
 }
 
 .card-body {
   min-height: 100px;
-}
-
-.card-footer {
-  text-align: center;
-}
-
-.card-footer::before {
-  content: " ";
-  display: block;
-  width: 100%;
-  background: #e7e9eb;
-  height: 2px;
-}
-
-.card-footer::after {
-  content: " ";
-  display: block;
-  clear: both;
-}
-
-.button {
-  background-color: #3036f5;
-  border-radius: 6px;
-  border-width: 0;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  font-size: 22px;
-  line-height: 1.15;
-  outline: none;
-  padding: 15px;
-  position: relative;
-  text-align: center;
-  text-transform: none;
-  transform: translateZ(0);
-  transition: all .2s,box-shadow .08s ease-in;
-  width: 100%;
-}
-
-.button:disabled {
-  cursor: default;
-}
-
-.float-right {
-  float: right;
+  margin: 20px 0;
 }
 
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  background-color: transparent;
   border: none;
   display: block;
   width: 100%;
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 85px;
+  padding: 15px 15px 85px;
   font-size: 1.2rem;
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
+  margin: 10px 0;
+  color: var(--white);
+  border: 2px dashed var(--light-blue);
   border-radius: 6px;
   resize: none;
   overflow: hidden;
 }
 
-@media (max-width: 690px) {
-  .btn {
-    font-size: 1rem;
-    margin: 16px 0px 0px 0px;
-    padding: 10px 15px;
-  }
-
-  #password {
-    font-size: 1rem;
-  }
+#password::placeholder {
+  color: var(--light-blue);
 }
 
-@media (max-width: 500px) {
-  .btn {
-    font-size: 0.8rem;
-  }
+.button {
+  background-color: var(--white);
+  border: 0 solid var(--light-blue);
+  border-radius: 2rem;
+  box-sizing: border-box;
+  color: var(--dark-blue);
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: 'Barlow', sans-serif;
+  padding: 1rem 1.6rem;
+  text-align: center;
+  text-decoration: none var(--dark-blue) solid;
+  text-decoration-thickness: auto;
+  transition: all 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: var(--dark-blue);
+  color: var(--white);
 }
