@@ -4,7 +4,7 @@ Bootcamp week 3 Javascript challenge where we create a password generator. The u
 ## Installation
 N/A
 ## Usage
-Open [this website](https://skywalkah.github.io/password-generator/) in Chrome and follow the prompts to generate a secure password. Open Developer tools to look for errors.
+Open [this website](https://skywalkah.github.io/password-generator/) in Chrome. Click on the "Generate password" button and follow the prompts to generate a secure password. Open Developer tools to look for errors.
 ## What it should look like
 ![A screenshot of the desktop view](assets/images/password-generator-screen.png)
 ## Credits
