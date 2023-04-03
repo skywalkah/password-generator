@@ -6,7 +6,7 @@ N/A
 ## Usage
 Open [this website](https://skywalkah.github.io/password-generator/) in Chrome and follow the prompts to generate a secure password. Open Developer tools to look for errors.
 ## What it should look like
-![A screenshot of the desktop view](assets/images/03-javascript-homework-demo.png)
+![A screenshot of the desktop view](assets/images/password-generator-screen.png)
 ## Credits
 N/A
 
